@@ -47,7 +47,7 @@ class SendDailyTweetCountMail extends Command
 
         foreach ($users as $user) {
             $this->mailer->to($user->email)
-                ->markdown(new DailyTweetCount($user, $tweetCount));
+                ->send(new DailyTweetCount($user, $tweetCount));
         }
         return 0;
     }
