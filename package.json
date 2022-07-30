@@ -5,6 +5,10 @@
         "build": "vite build",
         "heroku-postbuild": "npm run production"
     },
+    "engines": {
+        "node": "16.x",
+        "npm": "8.x"
+    },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",
         "alpinejs": "^3.4.2",
